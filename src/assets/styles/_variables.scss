@@ -1,0 +1,16 @@
+$primary-color: #36BFB1;
+$secondary-color: #038C73;
+$dark-color: #014034;
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.v-btn {
+  background-color: $primary-color;
+  color: white;
+}
+
+.v-container {
+  padding: 20px;
+}
