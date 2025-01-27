@@ -1,9 +1,24 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+export default {
+  name: 'App',
+};
 </script>
 
 <template>
-  <div>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <v-toolbar-title>Controle de Despesas Mensais</v-toolbar-title>
+    </v-app-bar>
+
+    <v-main>
+      <router-view />
+    </v-main>
+
+    <v-footer app color="primary" dark>
+      <span class="mx-auto">&copy; 2025 - Desenvolvido por João Gomes</span>
+    </v-footer>
+  </v-app>
+  <!-- <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -11,20 +26,20 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+@import '@/assets/styles/_variables.scss';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.v-app-bar, .v-footer {
+  font-weight: bold;
 }
 </style>
