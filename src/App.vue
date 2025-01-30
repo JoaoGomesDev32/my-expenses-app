@@ -1,7 +1,9 @@
-<script setup lang="ts">
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: 'App',
-};
+});
 </script>
 
 <template>

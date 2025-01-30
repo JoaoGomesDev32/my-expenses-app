@@ -18,8 +18,8 @@
   </template>
   
   <script lang="ts">
-  import ChartComponent from '@/components/ChartComponent.vue';
-  import ExpenseCard from '@/components/ExpenseCard.vue';
+  import ChartComponent from '../components/ChartComponent.vue';
+  import ExpenseCard from '../components/ExpenseCard.vue';
   
   export default {
     components: {
